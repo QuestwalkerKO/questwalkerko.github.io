@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><head>
+    <script>
+        var startaudio = new Audio('https://cdn.discordapp.com/attachments/970402569451094046/972931647819366450/start.mp3');
+        var loopaudio = new Audio('https://cdn.discordapp.com/attachments/970402569451094046/972931673832431656/loop.mp3');
+        function play() {
+            startaudio.play();
+        }
+        function loop() {
+            loopaudio.play();
+            console.log('hello');
+        }
+    </script>
+    <style>
+        html,body {
+            margin:0;
+            padding:0;
+            height:100%;
+        }
+        .image-container {
+            display:grid;
+            height:100%;
+        }
+        .image-container img {
+            max-width:100%;
+            max-height:100vh;
+            margin:auto;
+        }
+    </style>
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/970402569451094046/970407013081288735/dog.gif">
+    <meta property="og:type" content="video.other">
+    <meta property="og:video:url" content="https://cdn.discordapp.com/attachments/970402569451094046/972903381884620810/lets_talk_about_computer_science.mp4">
+</head><body>
+    <button onclick="loop()">Play Audio</button>
+    <div class="image-container">
+        <img src="https://cdn.discordapp.com/attachments/970402569451094046/970417530814488606/cat.gif">
+    </div>
+</body></html>
